@@ -1,23 +1,34 @@
-body {
-  font-family: Arial, sans-serif;
-  text-align: center;
+/* Layout Setup */
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
   background: #f4f4f4;
   transition: background 0.5s, color 0.5s;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header */
 header {
   background: #007bff;
   color: white;
   padding: 20px;
 }
 
+/* Dark Mode */
 .dark-mode {
   background: #222;
   color: white;
 }
 
+/* Main Content */
 .chart-container {
   width: 80%;
   margin: auto;
@@ -27,12 +38,15 @@ header {
   margin-top: 20px;
 }
 
+/* Footer */
 footer {
   background: #222;
   color: white;
   padding: 10px;
+  margin-top: auto; /* pushes footer to bottom */
 }
 
+/* Buttons */
 button {
   background: #fff;
   border: none;

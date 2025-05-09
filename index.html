@@ -9,30 +9,32 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </head>
   <body>
-    <header>
-      <h1>Interactive Data Infographic</h1>
-      <button id="darkModeToggle">🌙 Dark Mode</button>
-    </header>
+    <div class="wrapper">
+      <header>
+        <h1>Interactive Data Infographic</h1>
+        <button id="darkModeToggle">🌙 Dark Mode</button>
+      </header>
 
-    <section class="infographic">
-      <div class="chart-container">
-        <canvas id="dataChart"></canvas>
-      </div>
+      <section class="infographic">
+        <div class="chart-container">
+          <canvas id="dataChart"></canvas>
+        </div>
 
-      <div class="controls">
-        <label for="dataCategory">Choose Data:</label>
-        <select id="dataCategory">
-          <option value="sales">Sales Data</option>
-          <option value="population">Population Growth</option>
-        </select>
+        <div class="controls">
+          <label for="dataCategory">Choose Data:</label>
+          <select id="dataCategory">
+            <option value="sales">Sales Data</option>
+            <option value="population">Population Growth</option>
+          </select>
 
-        <label for="dataRange">Adjust Data:</label>
-        <input type="range" id="dataRange" min="10" max="100" value="50" />
-      </div>
-    </section>
+          <label for="dataRange">Adjust Data:</label>
+          <input type="range" id="dataRange" min="10" max="100" value="50" />
+        </div>
+      </section>
 
-    <footer>
-      <p>Data Source: <a href="#">Unified Mentor</a></p>
-    </footer>
+      <footer>
+        <p>Data Source: <a href="#">Unified Mentor</a></p>
+      </footer>
+    </div>
   </body>
 </html>
